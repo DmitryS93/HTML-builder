@@ -18,9 +18,9 @@ fs.readdir('./03-files-in-folder/secret-folder',{ withFileTypes: true }, (err, f
       }
       else {  
         //console.log(path.join(__dirname, 'secret-folder', files[i].name));
-        console.log(stats.size);
+        //console.log(stats.size);
         size = String(Number(stats.size/1024).toFixed(2)) + 'kb';
-        console.log(size);
+        //console.log(size);
         result = name + ' - ' + ext + ' - ' + size;
         if (isFile === true) {
           console.log(result);
